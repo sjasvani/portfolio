@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jasvani S | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <h2>Jasvani S</h2>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#internship">Internship</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<header class="hero">
+    <h1>ELECTRICAL AND ELECTRONICS ENGINEER</h1>
+    <p></p>
+    <a class="btn" href="#projects">View Projects</a>
+</header>
+
+<section id="about" class="fade-in">
+    <h2>About Me</h2>
+    <p>
+        I am a highly motivated Electrical and Electronics Engineering graduate
+        with strong fundamentals in Python, Django, and web development.
+        I have hands-on experience through internships and academic projects,
+        including a Smart Agribot system for sustainable agriculture.
+        I am eager to start my career and contribute to real-world projects.
+    </p>
+</section>
+
+<section id="skills" class="fade-in">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+        <span>Python</span>
+        <span>Django</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>UI/UX Design</span>
+        <span>MySQL</span>
+        <span>Digital Electronics</span>
+        
+        <span>Manual Testing (Basics)</span>
+    </div>
+</section>
+
+<section id="experience" class="fade-in">
+    <h2>Internship Experience</h2>
+
+    <div class="project-card">
+        <h3>Embedded Systems Intern – Emglitz Technologies</h3>
+        <ul>
+            <li>Worked on embedded system development using microcontrollers</li>
+            <li>Performed hardware–software integration and testing</li>
+            <li>Gained practical knowledge of system integration and real-time applications</li>
+        </ul>
+    </div>
+
+    <div class="project-card">
+        <h3>Web Design Intern – Techpro Solutions</h3>
+        <ul>
+            <li>Designed responsive web pages using HTML and CSS</li>
+            <li>Collaborated with developers to integrate UI with backend functionality</li>
+            <li>Worked on internal and client-facing web applications</li>
+        </ul>
+    </div>
+</section>
+
+<section id="projects" class="fade-in">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+        <h3>Smart Agribot – Smart Irrigation System</h3>
+        <p>
+            Designed an autonomous Smart Agribot to monitor soil conditions
+            and optimize irrigation. Implemented real-time data monitoring
+            and automated farming tasks to improve crop yield and water efficiency.
+        </p>
+    </div>
+
+    
+</section>
+
+<section id="achievements" class="fade-in">
+    <h2>Achievements & Activities</h2>
+
+    <div class="project-card">
+        <ul>
+            <li>
+                Attended <strong>National Conference on Energy and Instrumentation Systems</strong>,
+                GCT College, Coimbatore (2025).
+            </li>
+            <li>
+                Research paper published in the
+                <strong>International Journal for Research in Technological Innovation (IJRTI)</strong>.
+            </li>
+            <li>
+                Active member of the <strong>Arts Club</strong>, contributed to planning and execution
+                of cultural events.
+            </li>
+            <li>
+                Participated in <strong>National Service Scheme (NSS)</strong> community service programs.
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section id="contact" class="fade-in">
+    <h2>Contact</h2>
+    <p>📧 Email: sjasvani3@gmail.com</p>
+    <p>📞 Phone: +91 9626580080</p>
+    <p>🔗 GitHub: github.com/yourusername</p>
+    <p>🔗 LinkedIn: linkedin.com/in/jasvani-s-02a86a310</p>
+</section>
+
+<footer>
+    <p>Jasvani S</p>
+</footer>
+
+<script>
+const sections = document.querySelectorAll('.fade-in');
+
+const reveal = () => {
+    sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        if (sectionTop < window.innerHeight - 100) {
+            section.classList.add('show');
+        }
+    });
+};
+
+window.addEventListener('scroll', reveal);
+reveal();
+</script>
+
+</body>
+</html>
